@@ -1,0 +1,8 @@
+x = int(input()) # 과목 개수 지정
+li = list(map(int,input().split())) # 입력할 점수 지정
+M = max(li) # 최댓값 지정
+sum = 0
+for i in range(x):
+    li[i] = li[i] / M * 100
+    sum += li[i]
+print(sum / x)
